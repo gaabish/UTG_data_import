@@ -1,2 +1,0 @@
-dbname,user,password,host,port
-continental_test_utrace_goods,continental_test,XYUksVgWmXVvtFKIJEslIHI,rc1c-9vmr8oa7fygpqvyy.mdb.yandexcloud.net,6432
