@@ -4,8 +4,8 @@ from Classes.code_tree import *
 from Classes.code_tree_root import *
 from Classes.сode_transaction import *
 
-
-with open('C:\\Users\\agabishev\\Desktop\\UTG_DATA\\connection.txt', 'r', encoding='utf8') as file_connection:
+with open(input('Путь к файлу (включая наименование файла и его расширение) с параметрами подключения: '),
+          'r', encoding='utf8') as file_connection:
     reader = file_connection.readlines()
     props = dict()
     for r in reader:
@@ -15,7 +15,8 @@ with open('C:\\Users\\agabishev\\Desktop\\UTG_DATA\\connection.txt', 'r', encodi
     conn = psycopg2.connect(dbname=props['dbname'], user=props['user'],
                             password=props['password'], host=props['host'],
                             port=props['port'])
-with open('C:\\Users\\agabishev\\Desktop\\UTG_DATA\\data.csv', 'r', encoding='utf8') as file_data:
+with open(input('Путь к файлу (включая наименование файла и его расширение) с данными для импорта: '),
+          'r', encoding='utf8') as file_data:
     reader = file_data.readlines()
     for r in range(1, len(reader)):
         line_data = reader[r].strip().split(';')
