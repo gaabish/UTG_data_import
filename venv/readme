@@ -1,0 +1,29 @@
+Инструкция по добавлению кодов
+1. В файле main.py в конструкциях with open('C:\\Users\\...', 'r', encoding='utf8') as file_connection:
+и with open('C:\\Users\\...', 'r', encoding='utf8') as file_data: заменить путь к файлам на свой (вместе с
+наименованием и расширением файла)
+2. file_connection читает данные из файла txt, file_data из csv
+3. Подготовив файлы для импорта и указав путь к файлам можно запускать выполенние программы
+
+Шаблон file_connection:
+dbname=
+user=
+password=
+host=
+port=
+
+Шаблон file_data:
+receiver_location_id
+sgtin_value
+trade_item_id
+tnved_code_id
+legal_entity_id
+location_id
+owner_id
+receiver_company_id
+accept_status
+regulator_status
+base_status
+reserved
+operation_date
+
